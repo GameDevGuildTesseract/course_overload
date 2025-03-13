@@ -62,7 +62,7 @@
   opacity: 0;
 }
 
-.loading-screen:has(.proceed) .proceed{
+.loading-screen .proceed{
   position: absolute;
   top: 0;
   left: 0;
@@ -70,16 +70,10 @@
   width: 100%;
   text-align: center;
   opacity: 0;
-  animation: appear_menu_screen 1000ms 0ms ease-in forwards;
 }
 
-@keyframes appear_menu_screen {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+.loading-screen:has(.proceed) .proceed{
+  opacity: 1;
 }
 
 .loading-screen:has(.proceed) .proceed .proceed_container{

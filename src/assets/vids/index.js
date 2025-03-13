@@ -1,4 +1,4 @@
-import clip from "./clip.gif"
+import clip from "./clip.mp4"
 
 export{
     clip

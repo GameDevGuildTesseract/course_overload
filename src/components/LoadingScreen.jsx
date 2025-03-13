@@ -41,7 +41,10 @@ const LoadingScreen = ({ showProceed, setIsLoaded }) => {
                     <div className="proceed">
                         <div className="proceed_container">
                             {/* Video Background */}
-                            <img src={clip} alt="" className="proceed-bg-video" />
+                            <video autoPlay loop muted className="proceed-bg-video">
+                                <source src={clip} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
 
                             {/* Proceed Content */}
                             <div className="proceed-content">
