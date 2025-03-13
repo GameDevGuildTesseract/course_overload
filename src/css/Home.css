@@ -1,0 +1,101 @@
+section:has(.paralax_header){
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paralax_header_container{
+    position: relative;
+    width: 100%;
+    height: 125%;
+}
+
+.paralax_header {
+    width: 100%;
+    height: 105%;
+    display: block;
+    background: #100F11;
+    z-index: 999;
+    transform: translate(-5%, -10%);
+}
+
+.paralax_header.hidden{
+    z-index: -1;
+    display: none;
+    transition: none;
+}
+
+.paralax_header .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    background: rgb(154,95,17);
+    background: radial-gradient(circle, rgba(154,95,17,1) 3%, rgba(16,15,17,1) 45%);
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+}
+
+.paralax_header .title_container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    
+}
+
+.paralax_header .title_container .title{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.paralax_header .title_container .title h1{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-45%, 0%);
+    text-align: center;
+    color: #fff;
+    line-height: 100%;
+}
+
+
+.paralax_header img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    object-fit: cover;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+
+.about{
+    height: 55%;
+    width: 100%;
+    background: rgb(255, 196, 0);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px 110px;
+    gap: 90px;
+}
+
+.about h1{
+    font-size: 10vw;
+    line-height: 100%;
+    color: #100F11;
+}
