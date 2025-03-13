@@ -30,7 +30,7 @@ function App() {
     <>
       <CostumeCusor />
       <div className="wrapper">
-        <BrowserRouter basename="/course_overload_web/">
+        <BrowserRouter basename="/course_overload/">
           <Navbar />
           <div className="container_main">
             <Routes>
